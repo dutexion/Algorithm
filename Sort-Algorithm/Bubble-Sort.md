@@ -20,11 +20,11 @@ int main()
 	{
 		for(j = 0; j < 9; j++)
 		{
-			if(array[j] > array[j+1])
+			if(array[j] > array[j+1]) // J번째 정렬칸과 그 오른쪽에 있는 정렬칸의 크기를 비교한다.
 			{
-				temp = array[j];
-				array[j] = array[j+1];
-				array[j+1] = temp;
+				temp = array[j]; // 오른쪽 정렬칸의 크기가 작다면 J번째 정렬칸의 값을 임시로 저장한다.
+				array[j] = array[j+1]; // 오른쪽 정렬칸에 있는 값을 J번째 정렬칸에 넣는다.
+				array[j+1] = temp; // 임시 저장한 값을 오른쪽 정렬칸에 넣는다.
 			}
 		}
 	}
